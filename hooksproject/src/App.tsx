@@ -1,11 +1,12 @@
 import React from "react"
+import './App.css'
 import Navbar from "./Components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
-import UseStateDemo from "./Pages/usestatehook/useState";
-import UseEffectDemo from "./Pages/useeffecthook/useEffect";
-import UseCallbackDemo from "./Pages/usecallbackhook/useCallback";
-import UseReducerDemo from "./Pages/usereducerhook/useReducer";
-import UseContextDemo from "./Pages/usecontexthook/useContext";
+import UseStateDemo from "./Pages/usestatehook/state example";
+import UseEffectDemo from "./Pages/useeffecthook/effect example";
+import UseCallbackDemo from "./Pages/usecallbackhook/callback example";
+import UseReducerDemo from "./Pages/usereducerhook/reducer example";
+import UseContextDemo from "./Pages/usecontexthook/context example";
 import Home from "./Pages/Home/Home";
 
 const App: React.FC = () => {
