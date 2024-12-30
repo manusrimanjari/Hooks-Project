@@ -1,4 +1,5 @@
 import React from "react";
+import './effect_example.scss'
 
 const UseEffectDemo: React.FC = () =>{
     return (

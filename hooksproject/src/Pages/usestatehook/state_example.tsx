@@ -1,5 +1,5 @@
 import React from "react";
-import './state example.scss';
+import './state_example.scss';
 import {data} from './dataset'
 
 const UseStateDemo: React.FC = () =>{
@@ -23,6 +23,8 @@ const UseStateDemo: React.FC = () =>{
         setProducts(data);
         setCountOfProducts(data.length);
     }
+
+    console.log("component rendered")
 
     return (
         <>

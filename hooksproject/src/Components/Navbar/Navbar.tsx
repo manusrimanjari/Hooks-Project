@@ -21,8 +21,10 @@ const Navbar: React.FC = () => {
                     <Link to='/usecontexthook'>useContext</Link></li>
                 <li onClick={() => setActive("useReducer")} className={active === 'useReducer'?"active":""}>
                     <Link to='/usereducerhook'>useReducer</Link></li>
-                {/* <li onClick={() => setActive("useRef")} className={active === 'useRef'?"active":""}>useRef</li>
-                <li onClick={() => setActive("useMemo")} className={active === 'useMemo'?"active":""}>useMemo</li> */}
+                <li onClick={() => setActive("useRef")} className={active === 'useRef'?"active":""}>
+                    <Link to='/userefhook'>useRef</Link></li>
+                <li onClick={() => setActive("useMemo")} className={active === 'useMemo'?"active":""}>
+                    <Link to='/usememohook'>useMemo</Link></li>
             </ul>
         </div>
         </>
