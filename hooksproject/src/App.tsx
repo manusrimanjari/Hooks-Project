@@ -1,11 +1,29 @@
-function App() {
+import React from "react"
+import Navbar from "./Components/Navbar/Navbar";
+import { Route, Routes } from "react-router-dom";
+import UseStateDemo from "./Pages/usestatehook/useState";
+import UseEffectDemo from "./Pages/useeffecthook/useEffect";
+import UseCallbackDemo from "./Pages/usecallbackhook/useCallback";
+import UseReducerDemo from "./Pages/usereducerhook/useReducer";
+import UseContextDemo from "./Pages/usecontexthook/useContext";
+import Home from "./Pages/Home/Home";
 
+const App: React.FC = () => {
+    return(
+        <>
+        <div className="app">
+          <Navbar/>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/usestatehook" element = {<UseStateDemo/>} />
+            <Route path="/useeffecthook" element = {<UseEffectDemo/>}/>
+            <Route path="/usecallbackhook" element = {<UseCallbackDemo/>}/>
+            <Route path="/usereducerhook" element = {<UseReducerDemo/>}/>
+            <Route path="/usecontexthook" element = {<UseContextDemo/>}/>
+          </Routes>
+        </div>
+        </>
+    );
+};
 
-  return (
-    <>
-    console.log("hello")
-    </>
-  )
-}
-
-export default App
+export default App;
