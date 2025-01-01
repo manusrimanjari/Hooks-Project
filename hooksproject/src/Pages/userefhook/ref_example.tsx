@@ -30,55 +30,35 @@ const UseRefDemo: React.FC = () =>{
     };
 
     return (
-        <div style={{ maxWidth: "400px", margin: "50px auto", textAlign: "center" }}>
+        <div className="container">
+            <div className="example-container">
+            <div className="login-container">
             <h1>Login Form</h1>
-            <div style={{ marginBottom: "20px" }}>
+            <div className="input-container">
                 <input
                     ref={usernameRef}
                     type="text"
                     placeholder="Username"
-                    style={{
-                        width: "100%",
-                        padding: "10px",
-                        marginBottom: "10px",
-                        fontSize: "16px",
-                        border: "1px solid #ccc",
-                        borderRadius: "5px",
-                    }}
+                    className="input-field"
                 />
                 <input
                     ref={passwordRef}
                     type="password"
                     placeholder="Password"
-                    style={{
-                        width: "100%",
-                        padding: "10px",
-                        fontSize: "16px",
-                        border: "1px solid #ccc",
-                        borderRadius: "5px",
-                    }}
+                    className="input-field"
                 />
             </div>
-            <p
-                ref={errorMessageRef}
-                style={{ color: "red", marginBottom: "20px", fontSize: "14px" }}
-            ></p>
-            <button
-                onClick={handleLogin}
-                style={{
-                    padding: "10px 20px",
-                    fontSize: "16px",
-                    backgroundColor: "#007BFF",
-                    color: "#fff",
-                    border: "none",
-                    borderRadius: "5px",
-                    cursor: "pointer",
-                }}
-            >
+            <p ref={errorMessageRef} className="error-message"></p>
+            <button onClick={handleLogin} className="login-button">
                 Login
             </button>
         </div>
-    );
+    </div>
+        <div className="content-section">
+            <p>Content goes here...</p>
+        </div>
+    </div>
+);
 };
 
 export default UseRefDemo;

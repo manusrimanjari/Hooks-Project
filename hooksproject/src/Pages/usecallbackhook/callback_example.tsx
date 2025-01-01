@@ -15,14 +15,20 @@ const UseCallbackDemo: React.FC = () =>{
 
     return (
         <>
-        <h1>useCallback Demo page</h1>
-        <p>Count: {count}</p>
+        <div className="container">
+            <div className="example-section">
+        <h2>Count: {count}</h2>
         <button onClick={handleClick}>Increment count</button>
         <br />
         <input type="text" value={text} 
             onChange={(e) => setText(e.target.value)}
             placeholder="type..." />
-        <p>Text: {text}</p>
+        <h2>Text: {text}</h2>
+        </div>
+        <div className="content-section">
+            <p> UseCallback example it is a hook</p>
+        </div>
+        </div>
         </>
     );
 };

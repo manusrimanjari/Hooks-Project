@@ -10,12 +10,17 @@ const ComponentA: React.FC = () =>{
     const [user] = useState('manu');
     return (
         <>
+        <div className="container">
         <div className="box">
             <h1>Component A</h1>
             <h2> {`Hello ${user}`}</h2>
             <UserContext.Provider value={user}>
                 <ComponentB />
             </UserContext.Provider>
+        </div>
+        <div className="content-section">
+            <p>usecontext hook to avoid prop drilling</p>
+        </div>
         </div>
         </>
     );

@@ -24,23 +24,6 @@ button:hover {
   background-color: rgb(80, 80, 80);
 }
 
-.btn-sm {
-  margin: 1rem 1rem;
-  padding: 0.8rem 1rem;
-  font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  border: none;
-  background-color: rgb(19, 16, 19);
-  color: white;
-  border-radius: 1rem;
-  transition: all 0.3s;
-}
-
-.btn-sm:hover {
-  cursor: pointer;
-  background-color: rgb(80, 80, 80);
-}
 
 .btn-submit {
   font-size: 1rem;
@@ -50,24 +33,6 @@ button:hover {
 .btn-submit:hover {
   color: black;
   background-color: rgb(116, 190, 4);
-}
-
-.btn-danger-sm {
-  margin: 1rem 1rem;
-  padding: 0.8rem 1rem;
-  font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  border: none;
-  background-color: rgb(220, 7, 57);
-  color: white;
-  border-radius: 1rem;
-  transition: all 0.3s;
-}
-
-.btn-danger-sm:hover {
-  cursor: pointer;
-  background-color: rgb(168, 5, 5);
 }
 
 input {
@@ -87,3 +52,23 @@ input {
   cursor: pointer;
   background-color: rgb(103, 15, 15);
 }
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.example-section{
+  flex: 1;
+  max-width: 60%;
+}
+.content-section{
+  flex: 1;
+  max-width: 40%;
+  font-size: 1.5rem;
+  justify-content: center;
+  margin-top: 80px
+}
+

@@ -13,12 +13,18 @@ const UseMemoDemo: React.FC = () =>{
 
     return (
         <>
-        <h1>usememo Demo page</h1>
+        <div className="container">
+            <div className="example-section">
         <h3>Sorting data: </h3>
         {sortedData.map((item, index) => (
             <p key={index}>{item}</p>
         ))}
         <button onClick={() => setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc')}>Sort</button>
+        </div>
+        <div className="content-section">
+            <p>content here</p>
+        </div>
+        </div>
         </>
     );
 };

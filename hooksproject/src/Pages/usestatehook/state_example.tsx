@@ -28,9 +28,10 @@ const UseStateDemo: React.FC = () =>{
 
     return (
         <>
-        <h1>useState Demo page</h1>
+        <div className="container">
+            <div className="example-section">
         <div className="cards">
-            <h2>Items: {countOfProduct}</h2>
+            <h3> Total Items: {countOfProduct}</h3>
             {products.map((product) =>{
                 return <div className="card" key = {product.id}>
                     <p>{product.name}, Rs. {product.price}</p>
@@ -40,7 +41,11 @@ const UseStateDemo: React.FC = () =>{
             <button onClick={handleDeleteAll}>Delete All</button>
             <button onClick={handleReset}>Reset</button>
         </div>
-        
+        </div>
+        <div className="content-section">
+            <p>Here is a simple example of how to use the useState hook in React.</p>
+        </div>
+        </div>
         </>
     );
 };

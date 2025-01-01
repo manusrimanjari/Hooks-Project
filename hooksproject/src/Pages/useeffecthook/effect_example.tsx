@@ -23,10 +23,16 @@ console.log("component mounted")
 
     return (
         <>
-        <h1>useeffect Demo page</h1>
-        <div className="joke">
-            <p><strong> Setup: </strong>{joke.setup}</p>
-            <p><strong>Punchline: </strong>{joke.punchline}</p>
+        <div className="container"> 
+            <div className="example-section">
+                <div className="joke">
+                    <p><strong> Setup: </strong>{joke.setup}</p>
+                    <p><strong>Punchline: </strong>{joke.punchline}</p>
+                </div>
+            </div>
+            <div className="content-section">
+                <p>useEffect is a hook that allows you to perform side effects in your components.</p>
+            </div>
         </div>
         </>
     );
