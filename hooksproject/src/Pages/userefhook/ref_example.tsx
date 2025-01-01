@@ -3,29 +3,9 @@ import React, { useRef } from "react";
 const UseRefDemo: React.FC = () =>{
     const usernameRef = useRef<HTMLInputElement>(null);
     const passwordRef = useRef<HTMLInputElement>(null);
-    const errorMessageRef = useRef<HTMLParagraphElement>(null);
 
     const handleLogin = () => {
         const username = usernameRef.current?.value;
-        const password = passwordRef.current?.value;
-
-        // Simple validation
-        if (!username) {
-            errorMessageRef.current!.textContent = "Username is required.";
-            usernameRef.current?.focus();
-            return;
-        }
-
-        if (!password) {
-            errorMessageRef.current!.textContent = "Password is required.";
-            passwordRef.current?.focus();
-            return;
-        }
-
-        // Clear the error message
-        errorMessageRef.current!.textContent = "";
-
-        // Simulate login logic
         alert(`Welcome, ${username}!`);
     };
 
@@ -48,17 +28,25 @@ const UseRefDemo: React.FC = () =>{
                     className="input-field"
                 />
             </div>
-            <p ref={errorMessageRef} className="error-message"></p>
             <button onClick={handleLogin} className="login-button">
                 Login
             </button>
         </div>
     </div>
         <div className="content-section">
-            <p>Content goes here...</p>
+            <h3>useRef Hook</h3>
+            <p>useRef is used to store references to DOM elements.It allows direct DOM manipulation
+               without triggering a re-render, making it efficient. useState, on the other hand, would require
+               state variables to manage input values, leading to unnecessary re-renders.</p>
         </div>
     </div>
 );
 };
 
 export default UseRefDemo;
+
+//using usestate for form input causes the form to be re-rendered on every keystroke. 
+//useRef is used to avoid this problem. It is a reference to the DOM node.
+//useRef is used to access the DOM node directly.  
+//the component does not re-render when the current value of the references changes when you access or update usernameRef.current
+// React does not re-render the component.

@@ -43,7 +43,10 @@ const UseStateDemo: React.FC = () =>{
         </div>
         </div>
         <div className="content-section">
-            <p>Here is a simple example of how to use the useState hook in React.</p>
+           <h3> useState Hook</h3>
+           <br />
+           <p> The useState hook is used to add state to functional components. 
+            The state updates automatically trigger the componont re-rendering </p>
         </div>
         </div>
         </>

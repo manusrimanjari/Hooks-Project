@@ -31,7 +31,11 @@ console.log("component mounted")
                 </div>
             </div>
             <div className="content-section">
-                <p>useEffect is a hook that allows you to perform side effects in your components.</p>
+                <h3>useEffect Hook</h3>
+                <br />
+                <p> useEffect Hook is used to handle side effects in functional components.
+                A side effect is anything that affects something outside the scope of the function being executed,
+                such as fetching data, updating the DOM, or setting timers.</p>
             </div>
         </div>
         </>
