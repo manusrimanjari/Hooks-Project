@@ -19,8 +19,8 @@ const Navbar: React.FC = () => {
                     <Link to='/usecallbackhook'>useCallback</Link></li>
                 <li onClick={() => setActive("useContext")} className={active === 'useContext'?"active":""}>
                     <Link to='/usecontexthook'>useContext</Link></li>
-                <li onClick={() => setActive("useReducer")} className={active === 'useReducer'?"active":""}>
-                    <Link to='/usereducerhook'>useReducer</Link></li>
+                {/* <li onClick={() => setActive("useReducer")} className={active === 'useReducer'?"active":""}>
+                    <Link to='/usereducerhook'>useReducer</Link></li> */}
                 <li onClick={() => setActive("useRef")} className={active === 'useRef'?"active":""}>
                     <Link to='/userefhook'>useRef</Link></li>
                 <li onClick={() => setActive("useMemo")} className={active === 'useMemo'?"active":""}>

@@ -5,8 +5,8 @@ import { Route, Routes } from "react-router-dom";
 import UseStateDemo from "./Pages/usestatehook/state_example";
 import UseEffectDemo from "./Pages/useeffecthook/effect_example";
 import UseCallbackDemo from "./Pages/usecallbackhook/callback_example";
-import UseReducerDemo from "./Pages/usereducerhook/reducer_example";
-import UseContextDemo from "./Pages/usecontexthook/context_example";
+// import UseReducerDemo from "./Pages/usereducerhook/reducer_example";
+import UseContextDemo from "./Pages/usecontexthook/ComponentA";
 import Home from "./Pages/Home/Home";
 import UseRefDemo from "./Pages/userefhook/ref_example";
 import UseMemoDemo from "./Pages/usememohook/usememo_example";
@@ -21,7 +21,7 @@ const App: React.FC = () => {
             <Route path="/usestatehook" element = {<UseStateDemo/>} />
             <Route path="/useeffecthook" element = {<UseEffectDemo/>}/>
             <Route path="/usecallbackhook" element = {<UseCallbackDemo/>}/>
-            <Route path="/usereducerhook" element = {<UseReducerDemo/>}/>
+            {/* <Route path="/usereducerhook" element = {<UseReducerDemo/>}/> */}
             <Route path="/usecontexthook" element = {<UseContextDemo/>}/>
             <Route path="/userefhook" element = {<UseRefDemo/>}/>
             <Route path="/usememohook" element = {<UseMemoDemo/>}/>
